@@ -68,7 +68,7 @@
         <!--Movie Time View Controller-->
         <scene sceneID="0xq-Kp-zN9">
             <objects>
-                <viewController id="LIA-B8-03G" customClass="MovieTimeViewController" sceneMemberID="viewController">
+                <viewController restorationIdentifier="MovieTimeViewController" storyboardIdentifier="MovieTimeViewController" id="LIA-B8-03G" customClass="MovieTimeViewController" customModule="MovieBookingApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="gum-my-Mpv">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="1500"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -97,18 +97,18 @@
                                 <rect key="frame" x="0.0" y="104" width="414" height="1396"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="L1r-e1-uAd">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="928.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="866.5"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="xrh-4h-ar5">
-                                                <rect key="frame" x="0.0" y="0.0" width="414" height="888.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="866.5"/>
                                                 <subviews>
                                                     <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="P6e-y0-dpz">
-                                                        <rect key="frame" x="0.0" y="0.0" width="414" height="150"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="414" height="120"/>
                                                         <color key="backgroundColor" name="primary_color"/>
                                                         <constraints>
-                                                            <constraint firstAttribute="height" constant="150" id="QZb-ts-auG"/>
+                                                            <constraint firstAttribute="height" constant="120" id="QZb-ts-auG"/>
                                                         </constraints>
-                                                        <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Sda-aP-0SK">
+                                                        <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Sda-aP-0SK">
                                                             <size key="itemSize" width="128" height="128"/>
                                                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
@@ -116,7 +116,7 @@
                                                         </collectionViewFlowLayout>
                                                         <cells>
                                                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="rNa-wZ-URP">
-                                                                <rect key="frame" x="0.0" y="11" width="128" height="128"/>
+                                                                <rect key="frame" x="0.0" y="-4" width="128" height="128"/>
                                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                                 <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="C73-xF-Hug">
                                                                     <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
@@ -125,28 +125,28 @@
                                                             </collectionViewCell>
                                                         </cells>
                                                     </collectionView>
-                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FWn-LF-52C">
-                                                        <rect key="frame" x="0.0" y="150" width="414" height="738.5"/>
+                                                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FWn-LF-52C">
+                                                        <rect key="frame" x="0.0" y="120" width="414" height="746.5"/>
                                                         <subviews>
                                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="8Ng-v4-hhu">
-                                                                <rect key="frame" x="0.0" y="16" width="414" height="722.5"/>
+                                                                <rect key="frame" x="0.0" y="16" width="414" height="730.5"/>
                                                                 <subviews>
                                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="Vbq-Rf-lgb">
-                                                                        <rect key="frame" x="16" y="8" width="382" height="187.5"/>
+                                                                        <rect key="frame" x="16" y="8" width="382" height="195.5"/>
                                                                         <subviews>
                                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Available In" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J59-gg-5R5">
-                                                                                <rect key="frame" x="0.0" y="0.0" width="382" height="21.5"/>
+                                                                                <rect key="frame" x="0.0" y="0.0" width="382" height="29.5"/>
                                                                                 <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="18"/>
                                                                                 <color key="textColor" red="0.031372549020000001" green="0.031372549020000001" blue="0.031372549020000001" alpha="1" colorSpace="calibratedRGB"/>
                                                                                 <nil key="highlightedColor"/>
                                                                             </label>
                                                                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="zMO-ne-S62">
-                                                                                <rect key="frame" x="0.0" y="37.5" width="382" height="150"/>
+                                                                                <rect key="frame" x="0.0" y="45.5" width="382" height="150"/>
                                                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                                                 <constraints>
                                                                                     <constraint firstAttribute="height" constant="150" id="lbF-B1-Xj5"/>
                                                                                 </constraints>
-                                                                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="u8O-uo-EaX">
+                                                                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="u8O-uo-EaX">
                                                                                     <size key="itemSize" width="128" height="128"/>
                                                                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                                                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
@@ -166,7 +166,7 @@
                                                                         </subviews>
                                                                     </stackView>
                                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="8Et-l1-fUS">
-                                                                        <rect key="frame" x="16" y="219.5" width="382" height="187.5"/>
+                                                                        <rect key="frame" x="16" y="227.5" width="382" height="187.5"/>
                                                                         <subviews>
                                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GC : Golden City" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cjx-6n-eog">
                                                                                 <rect key="frame" x="0.0" y="0.0" width="382" height="21.5"/>
@@ -180,7 +180,7 @@
                                                                                 <constraints>
                                                                                     <constraint firstAttribute="height" constant="150" id="y5a-6Z-Gc5"/>
                                                                                 </constraints>
-                                                                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="0zN-VQ-XvY">
+                                                                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="0zN-VQ-XvY">
                                                                                     <size key="itemSize" width="128" height="128"/>
                                                                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                                                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
@@ -200,7 +200,7 @@
                                                                         </subviews>
                                                                     </stackView>
                                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="g61-8h-Oh9">
-                                                                        <rect key="frame" x="16" y="431" width="382" height="187.5"/>
+                                                                        <rect key="frame" x="16" y="439" width="382" height="187.5"/>
                                                                         <subviews>
                                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GC : West Point" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Wu-tR-LSZ">
                                                                                 <rect key="frame" x="0.0" y="0.0" width="382" height="21.5"/>
@@ -214,7 +214,7 @@
                                                                                 <constraints>
                                                                                     <constraint firstAttribute="height" constant="150" id="XvC-ty-OIy"/>
                                                                                 </constraints>
-                                                                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="ZiC-ic-E7G">
+                                                                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="ZiC-ic-E7G">
                                                                                     <size key="itemSize" width="128" height="128"/>
                                                                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                                                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
@@ -234,7 +234,7 @@
                                                                         </subviews>
                                                                     </stackView>
                                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JZo-WR-Mg8">
-                                                                        <rect key="frame" x="16" y="642.5" width="382" height="48"/>
+                                                                        <rect key="frame" x="16" y="650.5" width="382" height="48"/>
                                                                         <color key="backgroundColor" name="primary_color"/>
                                                                         <constraints>
                                                                             <constraint firstAttribute="height" constant="48" id="Fm1-SD-1p2"/>
@@ -260,25 +260,20 @@
                                                             <constraint firstItem="8Ng-v4-hhu" firstAttribute="top" secondItem="FWn-LF-52C" secondAttribute="top" constant="16" id="TU5-Nl-crr"/>
                                                             <constraint firstAttribute="trailing" secondItem="8Ng-v4-hhu" secondAttribute="trailing" id="j7N-B1-YUI"/>
                                                         </constraints>
-                                                        <userDefinedRuntimeAttributes>
-                                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                                <integer key="value" value="16"/>
-                                                            </userDefinedRuntimeAttribute>
-                                                        </userDefinedRuntimeAttributes>
                                                     </view>
                                                 </subviews>
                                             </stackView>
                                         </subviews>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="backgroundColor" name="primary_color"/>
                                         <constraints>
                                             <constraint firstAttribute="trailing" secondItem="xrh-4h-ar5" secondAttribute="trailing" id="91X-9p-hPZ"/>
-                                            <constraint firstAttribute="bottom" secondItem="xrh-4h-ar5" secondAttribute="bottom" constant="40" id="McS-6C-QSf"/>
+                                            <constraint firstAttribute="bottom" secondItem="xrh-4h-ar5" secondAttribute="bottom" id="McS-6C-QSf"/>
                                             <constraint firstItem="xrh-4h-ar5" firstAttribute="leading" secondItem="L1r-e1-uAd" secondAttribute="leading" id="pdY-Iw-5yn"/>
                                             <constraint firstItem="xrh-4h-ar5" firstAttribute="top" secondItem="L1r-e1-uAd" secondAttribute="top" id="zRd-Wk-D4a"/>
                                         </constraints>
                                     </view>
                                 </subviews>
-                                <color key="backgroundColor" name="primary_color"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstItem="L1r-e1-uAd" firstAttribute="top" secondItem="2W5-15-WWc" secondAttribute="top" id="0w7-at-diX"/>
                                     <constraint firstItem="L1r-e1-uAd" firstAttribute="centerX" secondItem="2W5-15-WWc" secondAttribute="centerX" id="8fX-9r-F8q"/>
@@ -301,6 +296,16 @@
                         </constraints>
                     </view>
                     <size key="freeformSize" width="414" height="1500"/>
+                    <connections>
+                        <outlet property="collectionVIewHeightGCWestPoint" destination="XvC-ty-OIy" id="6gi-Tm-PSi"/>
+                        <outlet property="collectionViewAvailableIn" destination="zMO-ne-S62" id="8cy-kP-MWj"/>
+                        <outlet property="collectionViewDays" destination="P6e-y0-dpz" id="3T4-om-4FZ"/>
+                        <outlet property="collectionViewGCGoldenCity" destination="9aS-ag-xqG" id="zyD-yc-Cdz"/>
+                        <outlet property="collectionViewGCWestPoint" destination="IMj-RY-232" id="wRL-EM-VKq"/>
+                        <outlet property="collectionViewHeightAvailableIn" destination="lbF-B1-Xj5" id="80F-ZN-KV7"/>
+                        <outlet property="collectionViewHeightGCGoldenCity" destination="y5a-6Z-Gc5" id="0e0-VF-7aS"/>
+                        <outlet property="viewContainerTimes" destination="FWn-LF-52C" id="h8Y-Xs-WNh"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cO6-cg-AH2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,11 @@
 		6138D28426458587000A0BF3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6138D28226458587000A0BF3 /* Main.storyboard */; };
 		6138D2862645858B000A0BF3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6138D2852645858B000A0BF3 /* Assets.xcassets */; };
 		6138D2892645858B000A0BF3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6138D2872645858B000A0BF3 /* LaunchScreen.storyboard */; };
+		61C21A3A264F7F7400ABFED8 /* MovieTimeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61C21A39264F7F7400ABFED8 /* MovieTimeViewController.swift */; };
+		61C21A3E264F801100ABFED8 /* DaysCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61C21A3C264F801100ABFED8 /* DaysCollectionViewCell.swift */; };
+		61C21A3F264F801100ABFED8 /* DaysCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 61C21A3D264F801100ABFED8 /* DaysCollectionViewCell.xib */; };
+		61C21A47264F803E00ABFED8 /* TimeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61C21A45264F803E00ABFED8 /* TimeCollectionViewCell.swift */; };
+		61C21A48264F803E00ABFED8 /* TimeCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 61C21A46264F803E00ABFED8 /* TimeCollectionViewCell.xib */; };
 		B912B229AC4256CEF15DBAD1 /* Pods_MovieBookingApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4271ED92F78A0DBD26AFD96 /* Pods_MovieBookingApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -25,6 +30,11 @@
 		6138D2852645858B000A0BF3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6138D2882645858B000A0BF3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6138D28A2645858B000A0BF3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		61C21A39264F7F7400ABFED8 /* MovieTimeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieTimeViewController.swift; sourceTree = "<group>"; };
+		61C21A3C264F801100ABFED8 /* DaysCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DaysCollectionViewCell.swift; sourceTree = "<group>"; };
+		61C21A3D264F801100ABFED8 /* DaysCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DaysCollectionViewCell.xib; sourceTree = "<group>"; };
+		61C21A45264F803E00ABFED8 /* TimeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeCollectionViewCell.swift; sourceTree = "<group>"; };
+		61C21A46264F803E00ABFED8 /* TimeCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TimeCollectionViewCell.xib; sourceTree = "<group>"; };
 		A61E668213DB24E10EC28751 /* Pods-MovieBookingApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MovieBookingApp.release.xcconfig"; path = "Target Support Files/Pods-MovieBookingApp/Pods-MovieBookingApp.release.xcconfig"; sourceTree = "<group>"; };
 		B49921674A93E6F7C3192FB4 /* Pods-MovieBookingApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MovieBookingApp.debug.xcconfig"; path = "Target Support Files/Pods-MovieBookingApp/Pods-MovieBookingApp.debug.xcconfig"; sourceTree = "<group>"; };
 		C4271ED92F78A0DBD26AFD96 /* Pods_MovieBookingApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MovieBookingApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -48,7 +58,6 @@
 				B49921674A93E6F7C3192FB4 /* Pods-MovieBookingApp.debug.xcconfig */,
 				A61E668213DB24E10EC28751 /* Pods-MovieBookingApp.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -73,15 +82,52 @@
 		6138D27B26458587000A0BF3 /* MovieBookingApp */ = {
 			isa = PBXGroup;
 			children = (
+				61C21A38264F7F5700ABFED8 /* viewcontroller */,
+				61C21A37264F7F4F00ABFED8 /* cells */,
 				6138D27C26458587000A0BF3 /* AppDelegate.swift */,
 				6138D27E26458587000A0BF3 /* SceneDelegate.swift */,
-				6138D28026458587000A0BF3 /* ViewController.swift */,
 				6138D28226458587000A0BF3 /* Main.storyboard */,
 				6138D2852645858B000A0BF3 /* Assets.xcassets */,
 				6138D2872645858B000A0BF3 /* LaunchScreen.storyboard */,
 				6138D28A2645858B000A0BF3 /* Info.plist */,
 			);
 			path = MovieBookingApp;
+			sourceTree = "<group>";
+		};
+		61C21A37264F7F4F00ABFED8 /* cells */ = {
+			isa = PBXGroup;
+			children = (
+				61C21A42264F801700ABFED8 /* xibs */,
+				61C21A41264F801500ABFED8 /* swifts */,
+			);
+			path = cells;
+			sourceTree = "<group>";
+		};
+		61C21A38264F7F5700ABFED8 /* viewcontroller */ = {
+			isa = PBXGroup;
+			children = (
+				6138D28026458587000A0BF3 /* ViewController.swift */,
+				61C21A39264F7F7400ABFED8 /* MovieTimeViewController.swift */,
+			);
+			path = viewcontroller;
+			sourceTree = "<group>";
+		};
+		61C21A41264F801500ABFED8 /* swifts */ = {
+			isa = PBXGroup;
+			children = (
+				61C21A3C264F801100ABFED8 /* DaysCollectionViewCell.swift */,
+				61C21A45264F803E00ABFED8 /* TimeCollectionViewCell.swift */,
+			);
+			path = swifts;
+			sourceTree = "<group>";
+		};
+		61C21A42264F801700ABFED8 /* xibs */ = {
+			isa = PBXGroup;
+			children = (
+				61C21A3D264F801100ABFED8 /* DaysCollectionViewCell.xib */,
+				61C21A46264F803E00ABFED8 /* TimeCollectionViewCell.xib */,
+			);
+			path = xibs;
 			sourceTree = "<group>";
 		};
 		7BC50473A6C5C3D68CA95133 /* Frameworks */ = {
@@ -153,7 +199,9 @@
 			files = (
 				6138D2892645858B000A0BF3 /* LaunchScreen.storyboard in Resources */,
 				6138D2862645858B000A0BF3 /* Assets.xcassets in Resources */,
+				61C21A48264F803E00ABFED8 /* TimeCollectionViewCell.xib in Resources */,
 				6138D28426458587000A0BF3 /* Main.storyboard in Resources */,
+				61C21A3F264F801100ABFED8 /* DaysCollectionViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -207,7 +255,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				6138D28126458587000A0BF3 /* ViewController.swift in Sources */,
+				61C21A47264F803E00ABFED8 /* TimeCollectionViewCell.swift in Sources */,
 				6138D27D26458587000A0BF3 /* AppDelegate.swift in Sources */,
+				61C21A3A264F7F7400ABFED8 /* MovieTimeViewController.swift in Sources */,
+				61C21A3E264F801100ABFED8 /* DaysCollectionViewCell.swift in Sources */,
 				6138D27F26458587000A0BF3 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
